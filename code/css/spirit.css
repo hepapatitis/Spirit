@@ -111,15 +111,20 @@ body {
   width: 100%;
   margin: 0;
 }
-.home {
+.page {
+  min-height: 100%;
+  padding: 20px 0;
+}
+.page.home {
   background: #e0e1dc;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #c0c2c1), color-stop(1, #e0e1dc));
   background: -ms-linear-gradient(bottom, #c0c2c1, #e0e1dc);
   background: -moz-linear-gradient(center bottom, #c0c2c1 0%, #e0e1dc 100%);
   background: -o-linear-gradient(#e0e1dc, #c0c2c1);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0e1dc', endColorstr='#c0c2c1', GradientType=0);
-  height: 100%;
-  min-height: 100%;
+}
+.page.about {
+  background: #32bebc;
 }
 .sq-container {
   width: 687px;
@@ -229,6 +234,14 @@ body {
 }
 .sq:hover .sub-title {
   opacity: 1;
+}
+.get {
+  display: none;
+}
+#diagram {
+  float: left;
+  width: 600px;
+  height: 600px;
 }
 .overlay-bg {
   position: absolute;

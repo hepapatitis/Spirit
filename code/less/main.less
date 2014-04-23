@@ -26,11 +26,14 @@ html, body {
 }
 
 // NEW
-.home {
-	.gradient(#e0e1dc, #c0c2c1, #e0e1dc);
-	height:100%;
+.page {
 	min-height:100%;
+	padding:20px 0;
+	
+	&.home 	{ .gradient(#e0e1dc, #c0c2c1, #e0e1dc); }
+	&.about	{ background:@cyan; }
 }
+
 
 .sq-container {
 	width:@sq-container-width;
@@ -122,6 +125,19 @@ html, body {
 	}
 	
 	.transition();
+}
+
+// Plugins
+// Animated Skill Diagram - http://tympanus.net/codrops/2011/04/22/animated-skills-diagram/
+
+.get {
+    display:none;
+}
+ 
+#diagram {
+    float:left;
+    width:600px;
+    height:600px;
 }
 
 // OLD
